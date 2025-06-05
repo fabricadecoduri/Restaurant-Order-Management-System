@@ -2,7 +2,8 @@
 require 'vendor/autoload.php';
 include 'partials/_dbconnect.php';
 
-\Stripe\Stripe::setApiKey('sk_test_51QcsBRFTFhUHknGcWq488xMpJSIxGdsgeVg5dVOxsMVL0sPjDTbEQO1D6SaqdKo4KetDeUS3oS9EVEBAw4m4lbOT00duN9Idoa');
+\Stripe\Stripe::setApiKey('SECRET_KEY'); // Înlocuiește cu cheia ta secretă Stripe
+// Verifică dacă sesiunea de plată a fost creată
 
 if (isset($_GET['session_id'])) {
     $session_id = $_GET['session_id'];
